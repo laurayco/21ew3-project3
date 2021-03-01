@@ -1,0 +1,25 @@
+IMPORTANT -
+set environment variable $JAVA_HOME to the location of your installed JDK.
+before building.
+
+Building:
+$make
+
+Running:
+$cd bin
+$./proj3
+
+Troubleshooting:
+"ERROR: class not found !" - this indicates that the JVM cannot locate the
+"ZooFileWriter.class" file. Solution is to either build again, or run
+$make bin/ZooFileWriter.class
+
+Unable to find jni.h - this indicates that the JAVA_HOME variable is not
+pointed to a valid JDK installation. I have provided a default value,
+/usr/lib/jvm/java-11-openjdk-amd64, which is where Ubuntu installs openjdk 11
+by default. If this is not your environment, you will need to set $JAVA_HOME
+appropriately.
+
+Unable to find libjvm - this indicates that the LD_LIBRARY_PATH does not include
+your JDK environment. Solution is to set
+$LD_LIBRARY_PATH=$JAVA_HOME/lib:$JAVA_HOME/lib/server
