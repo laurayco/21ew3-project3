@@ -23,3 +23,27 @@ appropriately.
 Unable to find libjvm - this indicates that the LD_LIBRARY_PATH does not include
 your JDK environment. Solution is to set
 $LD_LIBRARY_PATH=$JAVA_HOME/lib:$JAVA_HOME/lib/server
+
+Summarize the project and what problem it was solving.
+
+This project manages a file database of animals for a Zoo.
+
+What did you do particularly well?
+
+Code is modularized, extendable, and self-explaining.
+
+Where could you enhance your code? How would these improvements make your code more efficient, secure, and so on?
+
+I guess you could use an actual database rather than file i/o, then turn the program into more of a CLI or Shared Library so it could be attached to an actual GUI to enhance usability.
+
+Did you find writing any piece of this code challenging, and how did you overcome this? What tools and/or resources are you adding to your support network?
+
+Most of the troubles were determining how to get JVM to see the .class files.
+
+What skills from this project will be particularly transferable to other projects and/or course work?
+
+I'm not sure that anything was particularly unique in this project, the problem it was solving was not novel and did not call for anything unusual.
+
+How did you make this program maintainable, readable, and adaptable?
+
+Self documenting variable names, self documenting function names, brief functions.
